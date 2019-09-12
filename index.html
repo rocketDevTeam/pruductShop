@@ -4,125 +4,341 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-  <link rel="stylesheet" href="style.css">
-  
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-
-
   <title>NeoSystem</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="script.js">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <!--Font Awesome CSS-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!--BootstrapCDN CSS only -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+  <!--BootstrapCDN  JS, Popper.js, and jQuery -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" ></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  
+  
+
+
+
+
 </head>
+
+
 <body>
-  <header class="header">
-    <nav class="navbar navbar-style">
+  <!--Navigation-->
 
-      <div class="container">
+  <header id="nav-bar">
 
-        <div class="navbar-header">
-
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#micon"> 
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
+      <nav class="navbar navbar-expand-lg navbar-light">
+          <a class="navbar-brand" href="#"><img src="logo.png" alt="logotype"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
           </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">PRODUCTS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">SERVICES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">ABOUT US</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">CONTACTS</a>
+                </li>
+            </ul>
+          </div>
+        </nav>
+  </header>
+      
 
-          <a href=""> <img class="logo" src="logo.png"> </a>
+  <!--Slide-->
+<div id="slider">
+  <div id="carousel" class="carousel slide carousel-fade" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item">
+          <img src="banner1.jpg" class="d-block w-100" alt="slide1">
+          <div class="carousel-caption">
+            <h5>New Technologies</h5>
+          </div>
         </div>
-
-          <div class="collapse navbar-collapse" id="micon">
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="">Home</a></li>
-          <li><a href="">Products</a></li>
-          <li><a href="">Services</a></li>
-          <li><a href="">About us</a></li>
-          <li><a href="">Contacts</a></li>
-        </ul>
-             </div>
+        <div class="carousel-item  active">
+          <img src="banner2.jpg" class="d-block w-100" alt="slide2">
+          <div class="carousel-caption">
+              <h5>Modern Systems</h5>
+            </div>
+        </div>
+        <div class="carousel-item">
+          <img src="banner3.jpg" class="d-block w-100" alt="slide3">
+          <div class="carousel-caption">
+              <h5>Highest Level Of Security</h5>
+            </div>
+        </div>
       </div>
-    </nav>
+      <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+    </div>
 
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-4 banner-search">
+    
+<!--About us-->
 
-            <form action="" method="get" class="search">
-                <input name="s" placeholder="Search here" type="search" class="input">
-                <input type="submit" name="" value="" class="submit" />
-              </form>
+<section id="about">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h2>About us</h2>
+        <div class="about-content">
+            <p>The most basic definition of any security system is found in its name. It is literally a means or method by which something is secured through a system of interworking components and devices.</p>
 
-              <div class="sidebar">
-                  <ul class="menu">
-                    <li class="p_menu"><a href="#">Fire protection systems </a>
-                      <ul class="v_menu">
-                        <li><a href="#">Fire Fighting Systems</a></li>
-                        <li><a href="#">Fire Pump System</a></li>
-                        <li><a href="#">Automatic Sprinkler</a></li>
-                        <li><a href="#">Wet Riser system</a></li>
-                        <li><a href="#">Dry Riser system with Breeching inlet</a></li>
-                        <li><a href="#">Fire Suppression Systems</a></li>
-                        <li><a href="#">Fire Detection and alarm System</a></li>
-                      </ul>
-                    </li>
-                    <li class="p_menu"><a href="#">Video surveillance systems</a>
-                      <ul class="v_menu">
-                        <li><a href="#">Analog system</a></li>
-                        <li><a href="#">Combined system</a></li>
-                        <li><a href="#">Hybrid system</a></li>
-                        <li><a href="#">Network system</a></li>
-                        <li><a href="#">CCTV</a></li>
-                      </ul>
-                    </li>
-                    
-                  </ul>
-                  </div>
+            <p>In this instance, we’re talking about home security systems, which are networks of integrated electronic devices working together with a central control panel to protect against burglars and other potential home intruders.</p>
+            
+            <p>Our home security systems includes:</p>
+
+           <ul>
+            <li>A control panel, which is the primary controller of a home’s security system</li>
+            <li>Door and window sensors</li>
+            <li>Motion sensors, both interior and exterior</li>
+            <li>Wired or wireless security cameras</li>
+            <li>A high-decibel siren or alarm</li>
+            <li>A yard sign and window stickers</li>
+           </ul>
+            
+           <p> We can help you to make your life eazier and safer.</p>
+        </div>
+        <button type="button" class="btn btn-primary">Read more>></button>
+      </div> 
+
+      <div class="col-md-6">
+  
+            <img alt="aboutUs" src="aboutUs.jpg" class="img-responsive">
+      </div>
+     
 
 
+      </div>
+
+
+
+
+    </div>
+
+  </div>
+</section>
+
+
+<!--Services-->
+<section id="services">
+  <div class="container">
+    <h2>Our services</h2>
+
+    <div class="row services">
+      <div class="col-md-6 text-center">
+        <div class="icon">
+            <i class="material-icons">whatshot</i>
+        </div>
+        <h3>Fire protection systems</h3>
+        <p>We provide these types of systems:</p>
+        <ul>
+          <li>Fire Fighting Systems</li>
+          <li>Fire Pump Systems</li>
+          <li>Automatic Sprinkler</li>
+          <li>Wet Riser Systems</li>
+          <li>Dry Riser Systems With Breeching Inlet</li>
+          <li>Fire Suppression Systems</li>
+          <li>Fire Detection And Alarm Systems</li>
+        </ul>
+
+      </div>
+
+      <div class="col-md-6 text-center">
+        <div class="icon">
+            <i class="material-icons">visibility</i>
+        </div>
+        <h3>Video surveillance systems</h3>
+        <p>We provide these types of systems:</p>
+        <ul>
+          <li>Analog Systems</li>
+          <li>Combined Systems</li>
+          <li>Hybrid Systems</li>
+          <li>Network Systems</li>
+          <li>CCTV</li>
+        </ul>
+
+      </div>
+
+
+    </div>
+
+
+
+  </div>
+
+
+</section>
+
+<!--Products-->
+
+<section id="products">
+
+  <div class="container">
+    <h2>Our Products</h2>
+
+  
+    <div class="row products">
+        <div class="col-md-3 text-center">
+          <div class="icon">
+              <i class="material-icons">dvr</i>
+          </div>
+          <h3>Access Control + Event Management</h3>
+         
+          <ul>
+            <li>CEM Systems</li>
+            <li>Kantech</li>
+            <li>Software House</li>
+          </ul>
+  
+        </div>
+  
+        <div class="col-md-3 text-center">
+          <div class="icon">
+              <i class="material-icons">link_off</i>
+          </div>
+          <h3>	Intrusion Security</h3>
+          
+          <ul>
+            <li>Bentel Security</li>
+            <li>DSC</li>
+            <li>Sur-Gard</li>
+            <li>Visonic</li>
+          </ul>
+  
         </div>
 
-
-
-        <div class="col-sm-8 banner-info">
-          <h1>What Is a Video Surveillance System?</h1>
-
-          <p>The benefits of video surveillance systems include:
-            <ul>
-
-              <li>Additional Security: Many property owners who already own security systems invest in video surveillance for additional support. A traditional security system enables a property owner to receive instant notifications if a break-in occurs. Meanwhile, a video surveillance system allows a property owner to record real-time events on and around a property, providing additional insight into break-ins and other security issues.</li>
-              <li>Advanced Support: Smartphones and other mobile devices have transformed the global video surveillance marketplace. Today, mobile devices make it simple for property owners to review video footage of security incidents at their convenience. Video surveillance systems also enable property owners to receive up-to-the-minute details about what’s happening on and around a property.</li>
-              <li>Cost Savings: Video surveillance increases security and reduces risk. Many insurance companies offer business and home insurance discounts to those who install video surveillance systems. As a result, video surveillance systems sometimes help property owners reduce their business or home insurance costs.</li>
-             <li> Simple to Use: Many video surveillance systems are simple to use, ensuring both commercial and residential property owners can maximize the value of these systems.</li>
-             <li> growth-of-video-surveillance</li>
+        <div class="col-md-3 text-center">
+            <div class="icon">
+                <i class="material-icons">visibility</i>
+            </div>
+            <h3>Video Security</h3>
             
-          </ul>
-          </p>
+            <ul>
+              <li>American Dynamics</li>
+              <li>Exacq</li>
+              <li>Illustra Cameras</li>
+            </ul>
+    
           </div>
 
+          <div class="col-md-3 text-center">
+              <div class="icon">
+                  <i class="material-icons">insert_emoticon</i>
+              </div>
+              <h3>Physical Security Information Management</h3>
+              
+              <ul>
+                <li>Proximex </li>
+                
+              </ul>
+      
+            </div>
+  
+  
       </div>
+  
+
+</section>
+
+
+<!--Footer-->
+<footer id="contact">
+  <div class="container">
+
+    <h2>Get in Touch</h2>
+    <div class="row">
+      <div class="col-md-6">
+
+        <form class="contact-form">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Your Name">
+          </div>
+
+          <div class="form-group">
+              <input type="number" class="form-control" placeholder="Phone Number">
+            </div>
+
+            <div class="form-group">
+                <input type="email" class="form-control" placeholder="Email Id">
+              </div>
+
+              <div class="form-group">
+                  <textarea  class="form-control" rows="5" placeholder="Your Message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-ptimapy">SEND MESSAGE</button>
+
+
+
+        </form>
+      </div>
+
+      <div class="col-md-6 contact-info">
+
+        <div class="follow">
+          <b>Address:</b> <i class="material-icons">navigation</i>Something, Kharkiv, Ukraine
+        </div>
+
+        <div class="follow">
+            <b>Phone:</b> <i class="material-icons">local_phone</i>+38099-000-00-00
+          </div>
+
+          
+          <div class="follow">
+              <b>Email:</b> <i class="material-icons">email</i>example.website@gmail.ru
+            </div>
+
+            <div class="follow"><label>
+                <b>Get Social:</b></label> 
+                <a href="#"><i class="material-icons">cloud</i></a>
+                <a href="#"><i class="material-icons">email</i></a>
+                <a href="#"><i class="material-icons">calendar_today</i></a>
+                <a href="#"><i class="material-icons">dashboard</i></a>
+              </div>
+
+              <div class="footer-bottom text-center">
+                  &copy NeoSystem.com | Website designed
+                </div>
+    
+
+
+
+
+      </div>
+
+
     </div>
-  </header>
 
 
-<!--footer-->
-
-
-<footer>
-<div class="logo">
-    <a href=""> <img class="logo" src="logo.png"> </a>
   </div>
 
-  <div class="socials">
-    <a href="#"><img src="instagram-256x256.png" alt="" width="40px" height="auto"></a>
-    <a href="#"><img src="google-plus.png" alt="" width="40px" height="auto"></a>
-    <a href="#"><img src="new-twitter-icon-iphones2-e1342012185459.jpg" alt="" width="40px" height="auto"></a>
-    <a href="#"><img src="w512h5121347464873Facebookalt1.png" alt="" width="40px" height="auto"></a>
-    <a href="#"><img src="Без названия.png" alt="" width="40px" height="auto"></a>
-  </div>
 
-  <div class="footer-bottom">
-    &copy NeoSystem.com | Website designed
-  </div>
 </footer>
+
+  
 </body>
+
+
 </html>
