@@ -250,4 +250,10 @@ transition: 0.7s;
 		color: lightgray;
 	}
 
-	
+	#contact .btn{
+		background-color: whitesmoke;
+		color: #555;
+		border: 1px solid;
+		border-color: #555;
+		border-radius: 5%;
+	}
